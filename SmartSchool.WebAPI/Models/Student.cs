@@ -20,5 +20,7 @@ namespace SmartSchool.WebAPI.Models
         public string Name { get; set; }
         public string LastName { get; set; }
         public string Telephone { get; set; }
+
+        public IEnumerable<StudentSubject> StudentsSubjects { get; set; }
     }
 }
