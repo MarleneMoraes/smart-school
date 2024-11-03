@@ -52,5 +52,33 @@ namespace SmartSchool.WebAPI.Controllers
             if (student == null) return BadRequest("Student not found");
             return Ok(student);
         }
+
+        [HttpPost]
+        public IActionResult Post(Student student)
+        {
+            
+            return Ok(student);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, Student student)
+        {
+            
+            return Ok(student);
+        }
+
+        [HttpPatch("{id}")]
+        public IActionResult Patch(int id, Student student)
+        {
+            
+            return Ok(student);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            
+            return Ok();
+        }
     }
 }
