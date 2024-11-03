@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SmartSchool.WebAPI.props" />
+</Project>
