@@ -9,13 +9,16 @@ var services = builder.Services;
 services.AddDbContext<DataContext>(context =>
     context.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 services.AddControllers();
+
 // Swagger/OpenAPI
+
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // HTTP request pipeline config
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
