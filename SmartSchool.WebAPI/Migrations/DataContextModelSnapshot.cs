@@ -37,6 +37,57 @@ namespace SmartSchool.WebAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Students");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            LastName = "Kent",
+                            Name = "Marta",
+                            Telephone = "33225555"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            LastName = "Isabela",
+                            Name = "Paula",
+                            Telephone = "3354288"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            LastName = "Antonia",
+                            Name = "Laura",
+                            Telephone = "55668899"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            LastName = "Maria",
+                            Name = "Luiza",
+                            Telephone = "6565659"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            LastName = "Machado",
+                            Name = "Lucas",
+                            Telephone = "565685415"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            LastName = "Alvares",
+                            Name = "Pedro",
+                            Telephone = "456454545"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            LastName = "José",
+                            Name = "Paulo",
+                            Telephone = "9874512"
+                        });
                 });
 
             modelBuilder.Entity("SmartSchool.WebAPI.Models.StudentSubject", b =>
@@ -52,6 +103,123 @@ namespace SmartSchool.WebAPI.Migrations
                     b.HasIndex("SubjectId");
 
                     b.ToTable("StudentSubjects");
+
+                    b.HasData(
+                        new
+                        {
+                            StudentId = 1,
+                            SubjectId = 2
+                        },
+                        new
+                        {
+                            StudentId = 1,
+                            SubjectId = 4
+                        },
+                        new
+                        {
+                            StudentId = 1,
+                            SubjectId = 5
+                        },
+                        new
+                        {
+                            StudentId = 2,
+                            SubjectId = 1
+                        },
+                        new
+                        {
+                            StudentId = 2,
+                            SubjectId = 2
+                        },
+                        new
+                        {
+                            StudentId = 2,
+                            SubjectId = 5
+                        },
+                        new
+                        {
+                            StudentId = 3,
+                            SubjectId = 1
+                        },
+                        new
+                        {
+                            StudentId = 3,
+                            SubjectId = 2
+                        },
+                        new
+                        {
+                            StudentId = 3,
+                            SubjectId = 3
+                        },
+                        new
+                        {
+                            StudentId = 4,
+                            SubjectId = 1
+                        },
+                        new
+                        {
+                            StudentId = 4,
+                            SubjectId = 4
+                        },
+                        new
+                        {
+                            StudentId = 4,
+                            SubjectId = 5
+                        },
+                        new
+                        {
+                            StudentId = 5,
+                            SubjectId = 4
+                        },
+                        new
+                        {
+                            StudentId = 5,
+                            SubjectId = 5
+                        },
+                        new
+                        {
+                            StudentId = 6,
+                            SubjectId = 1
+                        },
+                        new
+                        {
+                            StudentId = 6,
+                            SubjectId = 2
+                        },
+                        new
+                        {
+                            StudentId = 6,
+                            SubjectId = 3
+                        },
+                        new
+                        {
+                            StudentId = 6,
+                            SubjectId = 4
+                        },
+                        new
+                        {
+                            StudentId = 7,
+                            SubjectId = 1
+                        },
+                        new
+                        {
+                            StudentId = 7,
+                            SubjectId = 2
+                        },
+                        new
+                        {
+                            StudentId = 7,
+                            SubjectId = 3
+                        },
+                        new
+                        {
+                            StudentId = 7,
+                            SubjectId = 4
+                        },
+                        new
+                        {
+                            StudentId = 7,
+                            SubjectId = 5
+                        });
                 });
 
             modelBuilder.Entity("SmartSchool.WebAPI.Models.Subject", b =>
@@ -72,6 +240,38 @@ namespace SmartSchool.WebAPI.Migrations
                     b.HasIndex("TeacherId");
 
                     b.ToTable("Subjects");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Matemática",
+                            TeacherId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Física",
+                            TeacherId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Português",
+                            TeacherId = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Inglês",
+                            TeacherId = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Programação",
+                            TeacherId = 5
+                        });
                 });
 
             modelBuilder.Entity("SmartSchool.WebAPI.Models.Teacher", b =>
@@ -87,6 +287,33 @@ namespace SmartSchool.WebAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Teachers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Lauro"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Roberto"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Ronaldo"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Rodrigo"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Alexandre"
+                        });
                 });
 
             modelBuilder.Entity("SmartSchool.WebAPI.Models.StudentSubject", b =>
